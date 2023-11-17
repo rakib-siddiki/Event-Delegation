@@ -48,7 +48,7 @@ strong {
     color: #292929;
 }
 
-ol .alternating-colors {
+.alternating-colors {
     li:nth-child(odd):before {
         border-color: #0BAD02;
     }
@@ -56,4 +56,10 @@ ol .alternating-colors {
     li:nth-child(even):before {
         border-color: #2378D5;
     }
+}
+button{
+    padding: 10px;
+    font-family: 'Space Mono', monospace;
+    text-transform: capitalize;
+    border-color: #0BAD02;
 }

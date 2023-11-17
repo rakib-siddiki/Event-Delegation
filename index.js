@@ -1,12 +1,11 @@
-const EvendDelegation = document.querySelector("ol");
-console.log("🚀 > file: index.js:2 > EvendDelegation:", EvendDelegation);
-EvendDelegation.addEventListener("click", function (e) {
-  console.dir(e.target);
+const EvendDelegationList = document.querySelector("ol");
+
+EvendDelegationList.addEventListener("click", function (e) {
   if (e.target.matches("li")) {
     console.log("ok");
     e.target.style.background = "red";
     e.target.style.color = "purple";
-    switch (e.target.textContent) {
+    switch (e.target.innerText) {
       case "JavaScript":
         e.target.style.background = "aqua";
         break;
@@ -17,6 +16,7 @@ EvendDelegation.addEventListener("click", function (e) {
         break;
       case "React":
         e.target.style.background = "green";
+        
         break;
       case "MongoDb":
         e.target.style.background = "orange";
@@ -25,3 +25,8 @@ EvendDelegation.addEventListener("click", function (e) {
     }
   }
 });
+function addNewElement() {
+  const newElement= document.createElement('li')
+  newElement.textContent="Experess Js"
+  EvendDelegationList.appendChild(newElement);
+}

@@ -20,6 +20,7 @@ body {
 
 ol {
     padding-left: 50px;
+    cursor: pointer;
 }
 
 li {
@@ -62,4 +63,5 @@ button{
     font-family: 'Space Mono', monospace;
     text-transform: capitalize;
     border-color: #0BAD02;
+    cursor: pointer;
 }
